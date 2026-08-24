@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>formulario</h2>
+    <form action="registros.php" method="post">
+           <table>
+            <h2>lista de peliculas</h2>
+            <a href="agregar.html">Agregar Pelicula</a><br><br>
+            <tr>
+            <th>ID</th>
+            <th>pelucula</th>
+            <th>estreno</th>
+            <th>genero</th>
+            <th>nom_actor</th>
+            <th>apellido_actor</th>
+            </tr>
+           </table>
+            <br><br>
+            <a href="modificar.php">modificar peli</a>
+           <br><br>
+
+    <a href="eliminar.php?id=<?php echo
+     $fila['id_pelicula']; ?>" onclick="return confirm('¿Seguro que deseas eliminar esta pelicula?');">Eliminar</a>
+
+    </form>
+</body>
+</html>
